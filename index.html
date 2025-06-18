@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Meu Projeto Bootstrap</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+    }
+    body {
+      display: flex;
+    }
+    .dashboard {
+      height: 100vh;
+    }
+    .content {
+      height: 100vh;
+      overflow-y: auto;
+    }
+    .text-accent {
+      color: #00d6ab !important;
+    }
+  </style>
+</head>
+
+<body class="bg-dark">
+
+  <div class="container-fluid d-flex p-0">
+
+    <div class="dashboard bg-dark w-25 d-flex flex-column">
+      <nav class="nav flex-column">
+        <a class="navbar-brand" href="#" style="color: #ffffff;">
+          <img src="/assets/images/target.png" alt="" width="52" height="52" class="d-inline-block" style="padding-left: 1rem; padding-top: 1rem;">
+        </a>
+        <hr class="text-light">
+
+        <a class="nav-link" href="#" style="color: #00B894">Dashboard</a>
+        <a class="nav-link" href="#" style="color: #00B894">Orders</a>
+        <a class="nav-link" href="#" style="color: #00B894">Inventory</a>
+        <a class="nav-link" href="#" style="color: #00B894">Reports</a>
+        <a class="nav-link" href="#" style="color: #00B894">Employees</a>
+        <a class="nav-link" href="#" style="color: #00B894">Customers</a>
+      </nav>
+    </div>
+>
+    <div style="width: 5px; background-color: #00B894;"></div>
+
+
+    <div class="content w-75 d-flex flex-column">
+      <div class="d-flex justify-content-between align-items-center p-3 border-bottom border-secondary">
+        <h1 class="text-white">Sales Dashboard</h1>
+        <a class="notification" href="#">
+          <img src="/assets/images/bell-icon.png" alt="Notificações" width="24" height="24">
+        </a>
+      </div>
+
+      <div class="container-fluid p-4">
+
+        <div class="row mb-4">
+          <div class="col-md-6 mb-3">
+            <div class="card bg-secondary text-white">
+              <div class="card-body">
+                <h5 class="card-title text-accent">Sales by Rep</h5>
+                <div class="bg-dark rounded" style="height:200px;"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <div class="card bg-secondary text-white">
+              <div class="card-body">
+                <h5 class="card-title text-accent">Funnel Chart</h5>
+                <div class="bg-dark rounded" style="height:200px;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mb-4">
+          <div class="col-md-4 mb-3">
+            <div class="card bg-secondary text-white">
+              <div class="card-body">
+                <h5 class="card-title text-accent">Average Value of Won Deals</h5>
+                <div class="bg-dark rounded" style="height:150px;"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card bg-secondary text-white">
+              <div class="card-body">
+                <h5 class="card-title text-accent">Sales Pipeline</h5>
+                <div class="bg-dark rounded" style="height:150px;"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card bg-secondary text-white">
+              <div class="card-body">
+                <h5 class="card-title text-accent">Monthly Goal</h5>
+                <div class="bg-dark rounded" style="height:150px;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <hr class="text-light mt-4 mb-4">
+        <div class="card bg-secondary text-white">
+          <div class="card-body">
+            <h5 class="card-title text-accent">Documents</h5>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item bg-dark text-white">Relatório Financeiro - Janeiro.pdf</li>
+              <li class="list-group-item bg-dark text-white">Relatório de Vendas - Fevereiro.pdf</li>
+              <li class="list-group-item bg-dark text-white">Inventário Atual.xlsx</li>
+              <li class="list-group-item bg-dark text-white">Relatório de Funcionários.pdf</li>
+              <li class="list-group-item bg-dark text-white">Apresentação - Q1 2025.pptx</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
